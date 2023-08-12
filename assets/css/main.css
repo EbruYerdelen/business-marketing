@@ -1,0 +1,132 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: HankenGrotesk;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 400px / 320px 310px;
+  justify-content: center;
+  align-content: center;
+}
+
+.your-results {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  background: linear-gradient(
+    40deg,
+    hsla(241, 81%, 54%, 0.99),
+    hsl(252, 100%, 67%, 0.999)
+  );
+  box-shadow: inset -4px -1px 9px 15px rgb(70 73 85 / 9%);
+  padding: 20px;
+  border-radius: 30px;
+  z-index: 1;
+  gap: 27px;
+}
+
+.result-content1 {
+  font-size: 18px;
+  color: hsl(222, 22%, 82%);
+  font-weight: 700;
+  align-self: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 150px;
+  align-self: center;
+}
+
+.result-content2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.result-content3 {
+  color: hsl(220, 6%, 61%);
+  font-size: 13px;
+  align-self: center;
+  font-weight: 700;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.result-content4 {
+  color: whitesmoke;
+  font-size: 29px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.result-content5 {
+  max-width: 250px;
+  color: hsl(222, 22%, 82%);
+  font-size: 17px;
+  font-weight: 500;
+  align-self: center;
+  text-align: center;
+}
+
+.summary {
+  background-color: whitesmoke;
+  box-shadow: 0 3px 30px 0px rgba(187, 206, 241, 0.658);
+  padding: 20px;
+  border-radius: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 628px) and (orientation: portrait) {
+  .container {
+    box-sizing: border-box;
+    grid-template: 350px 390px / 400px;
+    overflow: hidden;
+  }
+
+  .your-results {
+    gap: 15px;
+  }
+
+  .result-content1 {
+    padding-top: 10px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .result-content5 {
+    max-width: 270px;
+  }
+}
