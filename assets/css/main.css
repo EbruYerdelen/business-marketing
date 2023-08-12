@@ -92,11 +92,127 @@ body {
 }
 
 .summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: whitesmoke;
   box-shadow: 0 3px 30px 0px rgba(187, 206, 241, 0.658);
-  padding: 20px;
+  padding: 30px;
+  padding-top: 15px;
   border-radius: 30px;
+  row-gap: 1px;
 }
+.summary-content1 {
+  font-weight: 700;
+  color: rgb(46, 46, 46);
+  font-size: 17px;
+}
+
+.summary-content2 {
+  background-color: hsla(0, 100%, 90%, 0.219);
+  margin: 0;
+  display: flex;
+  border-radius: 15px;
+  height: 47px;
+}
+
+.summary-content2 .rate {
+  padding-left: 82px;
+  font-weight: 700;
+}
+
+.summary-content2 .property {
+  margin-top: 13px;
+  padding-left: 13px;
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+}
+
+.summary-content2 img {
+  padding-left: 10px;
+}
+
+.summary-content3 {
+  background-color: hsla(19, 100%, 90%, 0.219);
+  margin: 0;
+  display: flex;
+  border-radius: 15px;
+  height: 47px;
+}
+
+.summary-content3 .rate {
+  padding-left: 82px;
+  font-weight: 700;
+}
+
+.summary-content3 .property {
+  margin-top: 13px;
+  padding-left: 13px;
+  color: hsl(39, 100%, 56%);
+  font-weight: 700;
+}
+
+.summary-content3 img {
+  padding-left: 10px;
+}
+
+.summary-content4 {
+  background-color: hsla(120, 100%, 90%, 0.219);
+  margin: 0;
+  display: flex;
+  border-radius: 15px;
+  height: 47px;
+}
+
+.summary-content4 .rate {
+  padding-left: 94px;
+  font-weight: 700;
+}
+
+.summary-content4 .property {
+  margin-top: 13px;
+  padding-left: 13px;
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+}
+
+.summary-content4 img {
+  padding-left: 10px;
+}
+
+.summary-content5 {
+  background-color: hsla(219, 100%, 90%, 0.219);
+  margin: 0;
+  display: flex;
+  border-radius: 15px;
+  height: 47px;
+}
+
+.summary-content5 .rate {
+  padding-left: 94px;
+  font-weight: 700;
+}
+
+.summary-content5 .property {
+  margin-top: 13px;
+  padding-left: 13px;
+  color: hsl(234, 85%, 45%);
+  font-weight: 700;
+}
+
+.summary-content5 img {
+  padding-left: 10px;
+}
+
+.summary-content6 {
+  height: 36px;
+  padding-top: 12px;
+  color: whitesmoke;
+  background-color: rgba(41, 41, 77, 0.979);
+  border-radius: 23px;
+  text-align: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -114,6 +230,8 @@ body {
 
   .your-results {
     gap: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .result-content1 {
